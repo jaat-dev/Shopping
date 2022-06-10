@@ -1,0 +1,12 @@
+﻿@model Shopping.Models.CityViewModel
+
+<div class="form-group">
+    <span class="required">*</span>
+    <label asp-for="Name" class="control-label"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+<div class="form-group mt-2">
+    <input type="submit" value="Guardar" class="btn btn-outline-primary" />
+    <a asp-action="DetailsState" asp-route-id="@Model?.StateId" class="btn btn-outline-success">Regresar</a>
+</div>

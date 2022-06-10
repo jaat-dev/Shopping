@@ -1,19 +1,20 @@
-﻿@model Shopping.Data.Entities.Country
+﻿@model Shopping.Models.CityViewModel
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Crear</h1>
+<h1>Editar</h1>
 
-<h4>País</h4>
+<h4>Ciudad</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="EditCity">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="States" />
-            <partial name="_FrmCountry" />    
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="StateId" />
+            <partial name="_FrmCity" />             
         </form>
     </div>
 </div>

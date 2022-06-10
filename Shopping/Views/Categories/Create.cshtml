@@ -1,4 +1,4 @@
-﻿@model Shopping.Data.Entities.Country
+﻿@model Shopping.Data.Entities.Category
 
 @{
     ViewData["Title"] = "Create";
@@ -12,8 +12,7 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="States" />
-            <partial name="_FrmCountry" />    
+            <partial name="_FrmCategory" />    
         </form>
     </div>
 </div>
